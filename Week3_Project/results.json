@@ -1,0 +1,257 @@
+{
+  "n_samples": 178,
+  "n_features": 13,
+  "class_counts": {
+    "class_0": 59,
+    "class_1": 71,
+    "class_2": 48
+  },
+  "pca_var_2": 0.5540633835693526,
+  "pca_comp_90": 8,
+  "pca_comp_95": 10,
+  "kmeans_silhouette_by_k": {
+    "2": 0.2593,
+    "3": 0.2849,
+    "4": 0.2602,
+    "5": 0.2016,
+    "6": 0.2372,
+    "7": 0.2036,
+    "8": 0.157,
+    "9": 0.1499,
+    "10": 0.1436
+  },
+  "best_k_by_silhouette": 3,
+  "kmeans_k3_silhouette": 0.2848589191898987,
+  "kmeans_k3_ARI": 0.8974949815093207,
+  "kmeans_k3_inertia": 1277.9284888446423,
+  "hier_silhouette": 0.2774439826952266,
+  "hier_ARI": 0.7899332213582837,
+  "linkage_comparison": {
+    "ward": {
+      "silhouette": 0.2774,
+      "ARI": 0.7899
+    },
+    "complete": {
+      "silhouette": 0.2038,
+      "ARI": 0.5771
+    },
+    "average": {
+      "silhouette": 0.1575,
+      "ARI": -0.0054
+    },
+    "single": {
+      "silhouette": 0.1827,
+      "ARI": -0.0068
+    }
+  },
+  "crosstab_kmeans": {
+    "0": {
+      "class_0": 0,
+      "class_1": 65,
+      "class_2": 0
+    },
+    "1": {
+      "class_0": 0,
+      "class_1": 3,
+      "class_2": 48
+    },
+    "2": {
+      "class_0": 59,
+      "class_1": 3,
+      "class_2": 0
+    }
+  },
+  "crosstab_hier": {
+    "0": {
+      "class_0": 0,
+      "class_1": 58,
+      "class_2": 0
+    },
+    "1": {
+      "class_0": 0,
+      "class_1": 8,
+      "class_2": 48
+    },
+    "2": {
+      "class_0": 59,
+      "class_1": 5,
+      "class_2": 0
+    }
+  },
+  "cv_baseline": {
+    "Logistic Regression": {
+      "mean": 0.9775,
+      "std": 0.0184,
+      "folds": [
+        0.963,
+        0.963,
+        1.0,
+        0.9615,
+        1.0
+      ]
+    },
+    "Random Forest": {
+      "mean": 0.9852,
+      "std": 0.0296,
+      "folds": [
+        0.9259,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "grid_rf": {
+    "best_params": {
+      "max_depth": null,
+      "min_samples_split": 2,
+      "n_estimators": 50
+    },
+    "best_cv_f1_macro": 0.9854
+  },
+  "grid_lr": {
+    "best_params": {
+      "clf__C": 0.01
+    },
+    "best_cv_f1_macro": 0.9854
+  },
+  "test_metrics": {
+    "Logistic Regression (tuned)": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "roc_auc_ovr": 1.0,
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          12
+        ]
+      ],
+      "report": {
+        "class_0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "class_1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "class_2": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        }
+      }
+    },
+    "Random Forest (tuned)": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "roc_auc_ovr": 1.0,
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          18,
+          0
+        ],
+        [
+          0,
+          0,
+          12
+        ]
+      ],
+      "report": {
+        "class_0": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "class_1": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "class_2": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 45.0
+        }
+      }
+    }
+  },
+  "best_model": "Logistic Regression (tuned)",
+  "top_features": [
+    "flavanoids",
+    "color_intensity",
+    "alcohol",
+    "hue",
+    "proline"
+  ],
+  "final_cv_full_data": {
+    "Logistic Regression (tuned)": {
+      "accuracy": 0.9721,
+      "f1_macro": 0.9732,
+      "precision_macro": 0.9753,
+      "recall_macro": 0.9735
+    },
+    "Random Forest (tuned)": {
+      "accuracy": 0.9775,
+      "f1_macro": 0.9784,
+      "precision_macro": 0.9776,
+      "recall_macro": 0.9802
+    }
+  }
+}
